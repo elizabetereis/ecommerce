@@ -34,7 +34,7 @@ class Page {
       $this->setData($this->options['data']);
 
 		if ($this->options['header'] === true)
-      $this->tpl->draw("header");
+      $this->tpl->draw("header", false);
 
 	}
 
@@ -42,7 +42,7 @@ class Page {
 	{
 
 		if ($this->options['footer'] === true)
-      $this->tpl->draw("footer");
+      $this->tpl->draw("footer",false);
 
 	}
 
